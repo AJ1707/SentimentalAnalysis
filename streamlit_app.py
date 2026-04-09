@@ -26,7 +26,8 @@ if st.button("Analyze Sentiment"):
 
             #CALLING FLASK BACKEND
             response = requests.post(
-                "http://127.0.0.1:8000/predict",
+                # "http://127.0.0.1:8000/predict",
+                'https://sentimentalanalysis-2bd7.onrender.com',
                 json = {"reviews":review}
             )
 
