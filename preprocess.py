@@ -11,7 +11,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
-stop_words = set(stopwords.words('English'))
+stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
 def preprocess(text):
@@ -33,4 +33,4 @@ def preprocess(text):
     # Join tokens back to string
     return " ".join(tokens)
 
-print(preprocess("This the best worst movie ever !!"))
+#print(preprocess("This the best worst movie ever !!"))
